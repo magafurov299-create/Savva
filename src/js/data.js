@@ -55,8 +55,10 @@ export function priceLabel(price) {
 }
 
 export function imgSrcset(slug) {
+  // Relative (no leading slash) so it resolves correctly regardless of
+  // where the built site is hosted, including a subpath or file://.
   return {
-    src: `/img/${slug}-960.webp`,
-    srcset: `/img/${slug}-480.webp 480w, /img/${slug}-960.webp 960w, /img/${slug}-1600.webp 1600w`,
+    src: `img/${slug}-960.webp`,
+    srcset: `img/${slug}-480.webp 480w, img/${slug}-960.webp 960w, img/${slug}-1600.webp 1600w`,
   };
 }

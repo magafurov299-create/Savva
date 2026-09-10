@@ -198,6 +198,36 @@ function renderInstagram(lang) {
     .join("");
 }
 
+const VIDEO_CLIPS = ["video/clip-1.mp4", "video/clip-2.mp4", "video/clip-3.mp4", "video/clip-4.mp4"];
+
+function renderVideos() {
+  const grid = document.querySelector("[data-video-grid]");
+  if (!grid) return;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  grid.innerHTML = VIDEO_CLIPS.map(
+    (src) => `
+      <div class="video-card">
+        <video src="${src}" muted loop playsinline preload="metadata" ${reduceMotion ? "controls" : ""}></video>
+      </div>`
+  ).join("");
+
+  if (reduceMotion || !("IntersectionObserver" in window)) return;
+
+  // Only play a clip while it's actually on screen, so four autoplaying
+  // videos don't all compete for bandwidth/CPU at once.
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) video.play().catch(() => {});
+        else video.pause();
+      });
+    },
+    { threshold: 0.5 }
+  );
+  grid.querySelectorAll("video").forEach((v) => io.observe(v));
+}
+
 function render(lang) {
   applyLangAttrs(lang);
   renderNav(lang);
@@ -209,6 +239,7 @@ function render(lang) {
   renderReviews(lang);
   renderVisit(lang);
   renderInstagram(lang);
+  renderVideos();
   renderFooter(lang);
   markRevealFresh();
   destroyStory();

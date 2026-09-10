@@ -1,0 +1,46 @@
+{
+  "name": "SAVVA",
+  "name_ar": "سافا",
+  "tagline_en": "A day in SAVVA is what you need to be SAVVA.",
+  "tagline_ar": "يوم في سافا هو كل ما تحتاجه لتكون سافا.",
+  "rating": 4.7,
+  "reviewCount": 728,
+  "priceRange": "SAR 20–40",
+  "phone": "+966564370303",
+  "phoneDisplay": "+966 56 437 0303",
+  "whatsapp": "966564370303",
+  "address_en": "Zubairah Al Roumiah, Bir Uthman, Madinah 42331, Saudi Arabia",
+  "address_ar": "الزبيرة الرومية، بئر عثمان، المدينة المنورة 42331",
+  "plusCode": "FHVJ+3W Madinah",
+  "mapsUrl": "https://www.google.com/maps/place/%D8%B3%D8%A7%D9%81%D8%A7+savva%E2%80%AD/@24.4926931,39.5823565,17z/data=!3m1!4b1!4m6!3m5!1s0x15bdbf7c00dd71e3:0x8c75251d63b13c1!8m2!3d24.4926931!4d39.5823565!16s%2Fg%2F11kj12kz9s",
+  "mapsReviewsUrl": "https://www.google.com/maps/place/%D8%B3%D8%A7%D9%81%D8%A7+savva%E2%80%AD/@24.4926931,39.5823565,17z/data=!3m1!4b1!4m6!3m5!1s0x15bdbf7c00dd71e3:0x8c75251d63b13c1!8m2!3d24.4926931!4d39.5823565!16s%2Fg%2F11kj12kz9s?entry=ttu#reviews",
+  "instagram": "https://www.instagram.com/savva_cafe",
+  "instagramHandle": "@savva_cafe",
+  "hours_en": "Open daily · closes 2 AM",
+  "hours_ar": "مفتوح يوميًا · حتى الساعة 2 فجرًا",
+  "services": ["dine-in", "drive-through", "delivery"],
+  "reviews": [
+    {
+      "name": "Mani",
+      "rating": 5,
+      "quote_en": "A cozy and beautifully designed cafe with a calm, inviting atmosphere. The coffee was well balanced, not too sweet or too bitter.",
+      "quote_ar": "مقهى دافئ وتصميمه جميل بأجواء هادئة ومريحة. القهوة متوازنة، لا حلوة زيادة ولا مرة."
+    },
+    {
+      "name": "Family Doctor",
+      "role_en": "Local Guide",
+      "role_ar": "دليل محلي",
+      "rating": 5,
+      "quote_en": "They renewed the decoration and it looks amazing, indoor and outdoor seats are comfy, service is great.",
+      "quote_ar": "جددوا الديكور وصار رائع، الجلسات الداخلية والخارجية مريحة، والخدمة ممتازة."
+    },
+    {
+      "name": "Lujain J",
+      "role_en": "Local Guide",
+      "role_ar": "دليل محلي",
+      "rating": 5,
+      "quote_en": "The iced coffee of the day was phenomenal. They let you choose between Ethiopian or Colombian beans.",
+      "quote_ar": "قهوة اليوم المثلجة كانت رائعة. يخيّرونك بين بن إثيوبي أو كولومبي."
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAVVA Coffee — Specialty coffee in Madinah</title>
+<meta name="description" content="SAVVA Coffee, Madinah. 4.7 stars on Google, 728 reviews. Dine-in, drive-through and delivery, open daily until 2 AM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Manrope:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header" data-header>
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">SAVVA</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="menu.html" data-nav-menu>Menu</a></li>
+        <li><a href="#story" data-nav-story>Story</a></li>
+        <li><a href="#reviews" data-nav-reviews>Reviews</a></li>
+        <li><a href="#visit" data-nav-visit>Visit</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-btn" data-lang-toggle data-lang-switch aria-label="Switch language">ع</button>
+      <a href="#" class="btn btn-accent btn-sm" data-nav-order target="_blank" rel="noopener">Order now</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div data-scroll-sentinel style="height:1px;" aria-hidden="true"></div>
+
+<div class="mobile-menu" data-mobile-menu>
+  <div class="mobile-menu-top">
+    <span class="logo">SAVVA</span>
+    <button class="mobile-close" data-mobile-close aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <ul class="mobile-menu-links">
+    <li><a href="menu.html" data-nav-menu>Menu</a></li>
+    <li><a href="#story" data-nav-story>Story</a></li>
+    <li><a href="#reviews" data-nav-reviews>Reviews</a></li>
+    <li><a href="#visit" data-nav-visit>Visit</a></li>
+  </ul>
+  <div class="mobile-menu-cta">
+    <a href="#" class="btn btn-accent" data-nav-order target="_blank" rel="noopener">Order now</a>
+  </div>
+</div>
+
+<main>
+
+  <section class="hero-section">
+    <div class="container hero">
+      <div class="hero-copy reveal">
+        <span class="eyebrow" data-hero-eyebrow>Specialty coffee</span>
+        <h1 data-hero-title>A day in SAVVA is what you need to be SAVVA.</h1>
+        <p class="hero-subtext" data-hero-subtext></p>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-accent" data-hero-order target="_blank" rel="noopener"></a>
+          <a href="#" class="btn btn-outline-dark" data-hero-directions target="_blank" rel="noopener"></a>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <picture>
+          <source srcset="/img/hero-interior-1600.webp 1600w, /img/hero-interior-960.webp 960w, /img/hero-interior-480.webp 480w" sizes="(max-width:860px) 100vw, 50vw">
+          <img src="/img/hero-interior-960.webp" alt="SAVVA Coffee, indoor seating in Madinah" width="1080" height="676" fetchpriority="high">
+        </picture>
+        <div class="hero-media-badge">
+          <picture>
+            <source srcset="/img/hero-portrait-960.webp 960w, /img/hero-portrait-480.webp 480w" sizes="168px">
+            <img src="/img/hero-portrait-960.webp" alt="Matcha berry at SAVVA" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof-strip">
+    <div class="container proof-grid">
+      <div class="proof-item" data-proof-rating></div>
+      <div class="proof-item" data-proof-hours></div>
+      <div class="proof-item" data-proof-drive></div>
+      <div class="proof-item" data-proof-delivery></div>
+    </div>
+  </section>
+
+  <section class="story-section" id="story">
+    <div class="story-head">
+      <h2 data-story-title></h2>
+    </div>
+    <div class="story-stack" data-story-stack></div>
+  </section>
+
+  <section id="bestsellers">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 data-best-title></h2>
+      </div>
+      <div class="bento-grid reveal" data-best-grid></div>
+    </div>
+  </section>
+
+  <section id="menu-teaser">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 data-teaser-title></h2>
+        <a href="menu.html" class="link-arrow" data-teaser-viewall>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="menu-teaser-tabs reveal" data-teaser-tabs></div>
+      <div class="teaser-track reveal" data-teaser-track></div>
+    </div>
+  </section>
+
+  <section class="reviews-section" id="reviews">
+    <div class="container reviews-layout">
+      <div class="reviews-score reveal">
+        <span class="big" data-reviews-score></span>
+        <div class="reviews-stars" data-reviews-stars></div>
+        <div class="reviews-count" data-reviews-count></div>
+        <a href="#" class="link-arrow" data-reviews-readmore target="_blank" rel="noopener" style="margin-top:16px; display:inline-flex;"></a>
+      </div>
+      <div>
+        <h2 class="visually-hidden" data-reviews-title></h2>
+        <div class="reviews-list reveal" data-reviews-list></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 data-visit-title></h2>
+      </div>
+      <div class="visit-layout reveal">
+        <div class="visit-map">
+          <iframe src="https://www.google.com/maps?q=24.4926931,39.5823565&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SAVVA Coffee on Google Maps"></iframe>
+        </div>
+        <div class="visit-info">
+          <div class="visit-row">
+            <span data-visit-icon="pin"></span>
+            <div>
+              <div class="visit-row-label" data-visit-address-label></div>
+              <div class="visit-row-value" data-visit-address-value></div>
+            </div>
+          </div>
+          <div class="visit-row">
+            <span data-visit-icon="clock"></span>
+            <div>
+              <div class="visit-row-label" data-visit-hours-label></div>
+              <div class="visit-row-value" data-visit-hours-value></div>
+            </div>
+          </div>
+          <div class="visit-row">
+            <span data-visit-icon="phone"></span>
+            <div>
+              <div class="visit-row-label" data-visit-phone-label></div>
+              <a class="visit-row-value" data-visit-phone-value href="#"></a>
+            </div>
+          </div>
+          <p class="visit-note" data-visit-note></p>
+          <div class="visit-cta">
+            <a href="#" class="btn btn-dark" data-visit-directions target="_blank" rel="noopener"></a>
+            <a href="#" class="btn btn-outline-dark" data-visit-call></a>
+            <a href="#" class="btn btn-accent" data-visit-whatsapp target="_blank" rel="noopener"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="instagram">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 data-ig-title></h2>
+      </div>
+      <div class="ig-grid reveal" data-ig-grid></div>
+      <div class="ig-foot">
+        <a href="#" class="link-arrow" data-ig-follow target="_blank" rel="noopener"></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-cta">
+    <h2 data-footer-cta></h2>
+    <a href="#" class="btn btn-accent" data-footer-order target="_blank" rel="noopener"></a>
+  </div>
+  <div class="container footer-info">
+    <span class="footer-logo">SAVVA</span>
+    <div class="footer-contacts">
+      <span data-footer-address></span>
+      <a data-footer-phone href="#"></a>
+      <a data-footer-ig href="#" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span data-footer-rights></span>
+  </div>
+</footer>
+
+<script type="module" src="/src/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — SAVVA Coffee</title>
+<meta name="description" content="The full SAVVA menu: hot and cold drinks, desserts and breakfast. Order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Manrope:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header" data-header>
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">SAVVA</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="menu.html" data-nav-menu>Menu</a></li>
+        <li><a href="index.html#story" data-nav-story>Story</a></li>
+        <li><a href="index.html#reviews" data-nav-reviews>Reviews</a></li>
+        <li><a href="index.html#visit" data-nav-visit>Visit</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-btn" data-lang-toggle data-lang-switch aria-label="Switch language">ع</button>
+      <a href="#" class="btn btn-accent btn-sm" data-nav-order target="_blank" rel="noopener">Order now</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div data-scroll-sentinel style="height:1px;" aria-hidden="true"></div>
+
+<div class="mobile-menu" data-mobile-menu>
+  <div class="mobile-menu-top">
+    <span class="logo">SAVVA</span>
+    <button class="mobile-close" data-mobile-close aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <ul class="mobile-menu-links">
+    <li><a href="menu.html" data-nav-menu>Menu</a></li>
+    <li><a href="index.html#story" data-nav-story>Story</a></li>
+    <li><a href="index.html#reviews" data-nav-reviews>Reviews</a></li>
+    <li><a href="index.html#visit" data-nav-visit>Visit</a></li>
+  </ul>
+  <div class="mobile-menu-cta">
+    <a href="#" class="btn btn-accent" data-nav-order target="_blank" rel="noopener">Order now</a>
+  </div>
+</div>
+
+<main>
+
+  <section class="menu-hero">
+    <div class="container">
+      <span class="eyebrow">SAVVA</span>
+      <h1 data-menu-title>Our menu</h1>
+      <p data-menu-subtitle></p>
+      <div class="menu-hero-proof">
+        <span data-menu-rating></span>
+        <span data-menu-hours></span>
+      </div>
+    </div>
+  </section>
+
+  <nav class="menu-filters" aria-label="Menu categories">
+    <div class="container menu-filters-track" data-filter-track></div>
+  </nav>
+
+  <div data-menu-categories></div>
+
+</main>
+
+<div class="sticky-order-bar" data-sticky-order>
+  <a href="#" class="btn btn-accent" target="_blank" rel="noopener">Order on WhatsApp</a>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-cta">
+    <h2 data-footer-cta></h2>
+    <a href="#" class="btn btn-accent" data-footer-order target="_blank" rel="noopener"></a>
+  </div>
+  <div class="container footer-info">
+    <span class="footer-logo">SAVVA</span>
+    <div class="footer-contacts">
+      <span data-footer-address></span>
+      <a data-footer-phone href="#"></a>
+      <a data-footer-ig href="#" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span data-footer-rights></span>
+  </div>
+</footer>
+
+<script type="module" src="/src/js/menu-page.js"></script>
+</body>
+</html>

@@ -232,6 +232,7 @@ function render(lang) {
   applyLangAttrs(lang);
   renderNav(lang);
   renderHero(lang);
+  renderVideos();
   renderProof(lang);
   renderStory(lang);
   renderBestsellers(lang);
@@ -239,7 +240,6 @@ function render(lang) {
   renderReviews(lang);
   renderVisit(lang);
   renderInstagram(lang);
-  renderVideos();
   renderFooter(lang);
   markRevealFresh();
   destroyStory();

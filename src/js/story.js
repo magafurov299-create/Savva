@@ -11,7 +11,7 @@ let ctx = null;
 export function initStory() {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const stack = document.querySelector("[data-story-stack]");
-  if (!stack || reduceMotion || window.innerWidth < 760) return;
+  if (!stack || reduceMotion) return;
 
   ctx = gsap.context(() => {
     const panels = gsap.utils.toArray(".story-panel");

@@ -362,7 +362,7 @@
   max-width: 42ch;
 }
 
-@media (max-width: 760px), (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   .story-stack {
     display: flex;
     flex-direction: column;
